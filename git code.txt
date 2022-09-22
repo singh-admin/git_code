@@ -1,0 +1,35 @@
+(Use Git Bash for below all the commands)
+1. Clone the repository from GitHub using below git command.
+    git clone <URL>
+or Clone the sub branch by using below command.
+    git clone --single-branch --branch <branch> <repository>
+
+
+
+2. Go to cloned repository from command using change directory (cd).
+3. Make all the changes to repository related to task/error/bug or other.
+4. Add the changes using below git command.
+    git add -A or git add .
+
+
+
+5. Create a branch and checkout to it.
+    git checkout -b <branch-name> or (git branch <branch-name> and git checkout <branch-name>)
+
+
+
+6. Commit the message for changes.
+    git commit -m “<your-message>”
+
+
+
+7. Finally push the changes to branch.
+    git push -u origin <branch-name>
+
+
+
+8. Go to GitHub, create pull request and request a review (refer below image).
+
+9. If repository owner merges the code successfully without any required changes, then delete the local and remote repository.
+    git branch -D <branch-name>  (This will delete local branch)
+    git push origin --delete <branch-name>  (This will delete remote branch)
