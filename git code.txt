@@ -1,4 +1,8 @@
-(Use Git Bash for below all the commands)
+Note: First check the global username or email of the GitHub while pushing the code to GitHub.
+      git config --global user.name "My Name"
+
+
+
 1. Clone the repository from GitHub using below git command.
     git clone <URL>
 or Clone the sub branch by using below command.
@@ -7,7 +11,11 @@ or Clone the sub branch by using below command.
 
 
 2. Go to cloned repository from command using change directory (cd).
+
+
 3. Make all the changes to repository related to task/error/bug or other.
+
+
 4. Add the changes using below git command.
     git add -A or git add .
 
@@ -17,19 +25,25 @@ or Clone the sub branch by using below command.
     git checkout -b <branch-name> or (git branch <branch-name> and git checkout <branch-name>)
 
 
-
 6. Commit the message for changes.
     git commit -m “<your-message>”
-
 
 
 7. Finally push the changes to branch.
     git push -u origin <branch-name>
 
+8. delete the branch from main repo.
+    git push origin --delete <remoteBranchName>
 
+9. To know the username, type:
 
-8. Go to GitHub, create pull request and request a review (refer below image).
+    git config user.name
 
-9. If repository owner merges the code successfully without any required changes, then delete the local and remote repository.
-    git branch -D <branch-name>  (This will delete local branch)
-    git push origin --delete <branch-name>  (This will delete remote branch)
+    To know the email, type:
+
+    git config user.email
+
+10. See all the branch 
+    
+    git branch -a
+
